@@ -1,0 +1,34 @@
+{
+	"name":"cliffparnitzky/backend-custom-startpage",
+	"description":"Provides the possibility for each user to select an individual startpage in the backend.",
+	"keywords":["contao","backend","startpage","custom"],
+	"type":"contao-module",
+	"license":"LGPL-3.0+",
+	"authors":[
+		{
+			"name":"Cliff Parnitzky",
+			"email":"contao@cliff-parnitzky.de",
+			"role":"Developer"
+		}
+	],
+	"support":{
+		"email":"contao@cliff-parnitzky.de",
+		"issues":"https://github.com/cliffparnitzky/BackendCustomStartpage/issues",
+		"source":"https://github.com/cliffparnitzky/BackendCustomStartpage"
+	},
+	"require":{
+		"php":">=5.3",
+		"contao/core":">=2.9.5,<4.0.0-dev",
+		"contao-community-alliance/composer-installer":"*"
+	},
+	"extra":{
+		"contao":{
+			"sources":{
+				"system/modules/BackendCustomStartpage":"system/modules/BackendCustomStartpage"
+			}
+		},
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	}
+}
