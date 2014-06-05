@@ -75,7 +75,7 @@ class tl_user_customStartPage extends Backend
 		{
 			foreach (array_keys($arrModules) as $strModule)
 			{
-				if ($this->User->isAdmin || $this->User->hasAccess($strModule, 'modules'))
+				if ($this->User->hasAccess($strModule, 'modules'))
 				{
 					$arrayBackendModules[$strGroup][$strModule] = $strModule;
 				}

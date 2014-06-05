@@ -42,9 +42,9 @@ class BackendCustomStartpageHook extends Backend
 	 */
 	public function redirectToCustomStartpage (User $objUser)
 	{
-		if ($objUser instanceof BackendUser && (strlen($objUser->backendCustomStartpage) > 0) && ($objUser->isAdmin || $objUser->hasAccess('modules', $objUser->backendCustomStartpage)))
+		if ($objUser instanceof BackendUser && (strlen($objUser->backendCustomStartpage) > 0) && $objUser->hasAccess($objUser->backendCustomStartpage, 'modules'))
 		{
-			$this->redirect('contao/main.php?do=' . $objUser->backendCustomStartpage); 
+			$this->redirect('contao/main.php?do=' . $objUser->backendCustomStartpage);
 		}
 	}
 }
