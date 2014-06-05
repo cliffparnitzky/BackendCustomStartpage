@@ -20,7 +20,7 @@ https://github.com/cliffparnitzky/BackendCustomStartpage/issues
 Compatibility
 -------------
 
-- min. version: Contao 2.9.5
+- min. version: Contao 2.11.0
 - max. version: Contao 3.3.x
 
 
