@@ -30,6 +30,6 @@
 /**
  * Define name and tooltip for preferences (inactive modules)
  */
-$GLOBALS['TL_LANG']['MOD']['BackendCustomStartpage'] = 'Bietet für jeden Benutzer die Möglichkeit eine individuelle Startseite im Backend zu wählen.';
+$GLOBALS['TL_LANG']['MOD']['BackendCustomStartpage'] = 'Bietet fÃ¼r jeden Benutzer die MÃ¶glichkeit eine individuelle Startseite im Backend zu wÃ¤hlen.';
 
 ?>
