@@ -1,3 +1,7 @@
+[![Latest Version on Packagist](http://img.shields.io/packagist/v/cliffparnitzky/backend-custom-startpage.svg?style=flat)](https://packagist.org/packages/cliffparnitzky/backend-custom-startpage)
+[![Installations via composer per month](http://img.shields.io/packagist/dm/cliffparnitzky/backend-custom-startpage.svg?style=flat)](https://packagist.org/packages/cliffparnitzky/backend-custom-startpage)
+[![Installations via composer total](http://img.shields.io/packagist/dt/cliffparnitzky/backend-custom-startpage.svg?style=flat)](https://packagist.org/packages/cliffparnitzky/backend-custom-startpage)
+
 Contao Extension: BackendCustomStartpage
 ========================================
 
@@ -8,7 +12,7 @@ Installation
 ------------
 
 The extension is not published in contao extension repository.
-Install it manually or via [composer](https://packagist.org/packages/cliffparnitzky/backend-custom-startpage).
+Install it manually or via composer: [cliffparnitzky/backend-custom-startpage](https://packagist.org/packages/cliffparnitzky/backend-custom-startpage).
 
 
 Tracker
