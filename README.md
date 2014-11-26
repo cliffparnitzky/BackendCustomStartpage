@@ -13,7 +13,9 @@ Installation
 
 The extension is not published in contao extension repository.
 
-Install it manually or via composer: [cliffparnitzky/backend-custom-startpage](https://packagist.org/packages/cliffparnitzky/backend-custom-startpage).
+Install it via composer: [cliffparnitzky/backend-custom-startpage](https://packagist.org/packages/cliffparnitzky/backend-custom-startpage).
+
+If you prefer to install it manually, download the latest release here: https://github.com/cliffparnitzky/BackendCustomStartpage/releases
 
 
 Tracker
