@@ -11,9 +11,7 @@ Provides the possibility for each user to select an individual startpage in the 
 Installation
 ------------
 
-The extension is not published in contao extension repository.
-
-Install it via composer: [cliffparnitzky/backend-custom-startpage](https://packagist.org/packages/cliffparnitzky/backend-custom-startpage).
+Install the extension via composer: [cliffparnitzky/backend-custom-startpage](https://packagist.org/packages/cliffparnitzky/backend-custom-startpage).
 
 If you prefer to install it manually, download the latest release here: https://github.com/cliffparnitzky/BackendCustomStartpage/releases
 
@@ -27,8 +25,8 @@ https://github.com/cliffparnitzky/BackendCustomStartpage/issues
 Compatibility
 -------------
 
-- min. version: Contao 2.11.0
-- max. version: Contao 3.4.x
+- min. Contao version: >= 3.2.0
+- max. Contao version: <  3.5.0
 
 
 Dependency
