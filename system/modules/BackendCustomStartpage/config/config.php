@@ -2,7 +2,7 @@
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2014 Leo Feyer
+ * Copyright (C) 2005-2015 Leo Feyer
  *
  * Formerly known as TYPOlight Open Source CMS.
  *
@@ -21,7 +21,7 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  Cliff Parnitzky 2014
+ * @copyright  Cliff Parnitzky 2014-2015
  * @author     Cliff Parnitzky
  * @package    BackendCustomStartpage
  * @license    LGPL
@@ -30,7 +30,6 @@
 /**
  * Hooks
  */
-// Set monitoring as start page
-$GLOBALS['TL_HOOKS']['postLogin'][] = array('BackendCustomStartpageHook', 'redirectToCustomStartpage');
+$GLOBALS['TL_HOOKS']['postLogin'][] = array('CliffParnitzky\BackendCustomStartpageHooksImpl', 'redirectToCustomStartpage');
 
 ?>

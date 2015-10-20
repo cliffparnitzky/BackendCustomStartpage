@@ -2,7 +2,7 @@
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2014 Leo Feyer
+ * Copyright (C) 2005-2015 Leo Feyer
  *
  * Formerly known as TYPOlight Open Source CMS.
  *
@@ -21,28 +21,33 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  Cliff Parnitzky 2014
+ * @copyright  Cliff Parnitzky 2014-2015
  * @author     Cliff Parnitzky
  * @package    BackendCustomStartpage
  * @license    LGPL
  */
 
 /**
- * Class BackendCustomStartpageHook
+ * Run in a custom namespace, so the class can be replaced
+ */
+namespace CliffParnitzky;
+
+/**
+ * Class BackendCustomStartpageHooksImpl
  *
  * Special hook implementation for redirect to the custom startpage
- * @copyright  Cliff Parnitzky 2014
+ * @copyright  Cliff Parnitzky 2014-2015
  * @author     Cliff Parnitzky
  * @package    Controller
  */
-class BackendCustomStartpageHook extends Backend 
+class BackendCustomStartpageHooksImpl extends \Backend 
 {
 	/**
 	 * Execute postLogin hook to redirect to the custom startpage
 	 */
-	public function redirectToCustomStartpage (User $objUser)
+	public function redirectToCustomStartpage (\User $objUser)
 	{
-		if ($objUser instanceof BackendUser && (strlen($objUser->backendCustomStartpage) > 0) && $objUser->hasAccess($objUser->backendCustomStartpage, 'modules'))
+		if ($objUser instanceof \BackendUser && (strlen($objUser->backendCustomStartpage) > 0) && $objUser->hasAccess($objUser->backendCustomStartpage, 'modules'))
 		{
 			$this->redirect('contao/main.php?do=' . $objUser->backendCustomStartpage);
 		}

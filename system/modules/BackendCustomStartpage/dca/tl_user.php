@@ -2,7 +2,7 @@
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2014 Leo Feyer
+ * Copyright (C) 2005-2015 Leo Feyer
  *
  * Formerly known as TYPOlight Open Source CMS.
  *
@@ -21,7 +21,7 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  Cliff Parnitzky 2014
+ * @copyright  Cliff Parnitzky 2014-2015
  * @author     Cliff Parnitzky
  * @package    BackendCustomStartpage
  * @license    LGPL
@@ -42,7 +42,8 @@ $GLOBALS['TL_DCA']['tl_user']['fields']['backendCustomStartpage'] = array
 	'inputType'               => 'select',
 	'options_callback'        => array('tl_user_customStartPage', 'getBackendModules'),
 	'reference'               => &$GLOBALS['TL_LANG']['MOD'],
-	'eval'                    => array('tl_class'=>'w50', 'includeBlankOption'=>true)
+	'eval'                    => array('tl_class'=>'w50', 'includeBlankOption'=>true),
+	'sql'                     => "varchar(255) NOT NULL default ''"
 );
 
 
@@ -50,7 +51,7 @@ $GLOBALS['TL_DCA']['tl_user']['fields']['backendCustomStartpage'] = array
  * Class tl_user_customStartPage
  *
  * Provide miscellaneous methods that are used by the data configuration array.
- * @copyright  Cliff Parnitzky 2014
+ * @copyright  Cliff Parnitzky 2014-2015
  * @author     Cliff Parnitzky
  * @package    Controller
  */
